@@ -1,0 +1,97 @@
+{
+  "botQQ": "",
+  "ownerQQ": "",
+  "allowedGroups": [],
+  "ignoredUsers": [],
+  "aiPeers": [],
+  "aliases": [
+    "哈基米",
+    "哈基咪",
+    "吉米奈"
+  ],
+  "onebot": {
+    "wsUrl": "ws://127.0.0.1:3011/",
+    "protectedPorts": [
+      3000,
+      3001
+    ]
+  },
+  "llm": {
+    "baseUrl": "https://api.example.com/v1",
+    "model": "your-model-id",
+    "reasoningEffort": "low",
+    "maxTokens": 2048,
+    "timeoutMs": 120000,
+    "lastResortModel": "",
+    "fallbackModel": "",
+    "primaryFailureCooldownMs": 300000
+  },
+  "chat": {
+    "mergeMs": 2500,
+    "cooldownMs": 8000,
+    "followupMs": 480000,
+    "contextMessages": 32,
+    "contextTtlMs": 900000,
+    "maxContextChars": 9000,
+    "maxMessageChars": 1200,
+    "maxReplyChars": 60,
+    "maxQueueAgeMs": 90000,
+    "maxPendingGroups": 10,
+    "spontaneousProbability": 0,
+    "spontaneousCooldownMs": 120000,
+    "maxSpontaneousDaily": 10,
+    "quoteReplies": true,
+    "allowMentions": true,
+    "ownerPrivateChat": true
+  },
+  "memory": {
+    "mode": "impressions",
+    "maxPeople": 30,
+    "enabled": true,
+    "maxRecordsPerGroup": 900,
+    "maxRecordsPerUser": 30,
+    "maxInjectChars": 1200,
+    "forgettingEnabled": true,
+    "forgettingDays": [
+      7,
+      15,
+      30
+    ],
+    "maxHandoverEntries": 8,
+    "handoverEntryChars": 80,
+    "maxHandoverChars": 600,
+    "factTtlDays": 90,
+    "handoverTtlDays": 1,
+    "storage": "sqlite",
+    "storageMaxBytes": 5000000000
+  },
+  "media": {
+    "enabled": true,
+    "maxImagesPerDay": 20,
+    "maxImagesTotal": 100,
+    "maxImageBytes": 2097152,
+    "maxCacheBytes": 52428800,
+    "cacheTtlHours": 24,
+    "stickersEnabled": true,
+    "stickerProbability": 0.15,
+    "stickerCooldownMs": 60000,
+    "autoViewImages": false
+  },
+  "limits": {
+    "requestsPerMinute": 6,
+    "requestsPerDay": 100,
+    "requestsTotal": 0,
+    "reservedTokensPerDay": 0,
+    "reservedTokensTotal": 0
+  },
+  "search": {
+    "enabled": false,
+    "requestsPerDay": 5,
+    "requestsTotal": 50,
+    "cooldownMs": 30000,
+    "timeoutMs": 10000,
+    "cacheHours": 6,
+    "maxResults": 3,
+    "maxInjectChars": 1200
+  }
+}

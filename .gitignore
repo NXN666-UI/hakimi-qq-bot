@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+config.json
+persona.md
+data/
+logs/
+runtime/
+node_modules/
+test-output/
+*.log
+*.sqlite*
+*.db
+*.zip
+*.tmp
+assets/stickers/*
+!assets/stickers/README.md

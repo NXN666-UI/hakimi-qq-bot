@@ -1,0 +1,18 @@
+{
+  "name": "hakimi-chat",
+  "version": "0.4.0",
+  "private": true,
+  "type": "module",
+  "description": "Independent SnowLuma / OneBot v11 text chat companion",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node src/main.mjs",
+    "check": "node src/main.mjs --check",
+    "settings": "node src/web-ui.mjs",
+    "test": "node --test --test-isolation=none test/integration.test.mjs test/memory.test.mjs test/impressions.test.mjs test/media.test.mjs test/lifecycle.test.mjs test/search.test.mjs test/models.test.mjs test/web-ui.test.mjs",
+    "docs": "node scripts/build-manual.mjs"
+  },
+  "license": "MIT"
+}
